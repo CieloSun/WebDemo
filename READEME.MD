@@ -1,0 +1,1 @@
+仅仅作为一个spring hibernate spring-mvc 联合开发的样例而存在，是用eclipse开发的项目。
