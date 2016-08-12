@@ -1,9 +1,13 @@
-package com.service;
+package com.cielo.service;
 
-import com.dao.TbUserDao;
-import com.entity.TbUser;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.cielo.dao.TbUserDao;
+import com.cielo.entity.TbUser;
+@Service
 public class TbUserService {
+	@Autowired
 	private TbUserDao tbUserDao;
 	public boolean addAUserByNameAndPassword(String name, String password) {
 		TbUser tbUser = new TbUser();

@@ -1,13 +1,14 @@
-package com.dao;
+package com.cielo.dao;
 
 import java.util.List;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
 
-import com.entity.HibernateSessionFactory;
-import com.entity.TbUser;
-
+import com.cielo.entity.HibernateSessionFactory;
+import com.cielo.entity.TbUser;
+@Repository
 public class TbUserDao {
 	public boolean add(TbUser tbUser) {
 		Session session = null;
@@ -76,7 +77,7 @@ public class TbUserDao {
 		return false;
 	}
 	
-	public boolean deleteById(String name){
+	public boolean deleteByName(String name){
 		Session session=null;
 		try{
 			session=HibernateSessionFactory.getSession();

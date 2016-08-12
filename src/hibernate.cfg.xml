@@ -20,7 +20,7 @@
 		<property name="myeclipse.connection.profile">
 			SQLServer
 		</property>
-		<mapping class="com.entity.TbUser" />
+		<mapping class="com.cielo.entity.TbUser" />
 
 	</session-factory>
 

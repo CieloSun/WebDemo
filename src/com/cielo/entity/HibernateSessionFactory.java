@@ -1,4 +1,4 @@
-package com.entity;
+package com.cielo.entity;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
